@@ -20,18 +20,18 @@ public class AuthenticationController: ControllerBase
     public IActionResult Register(RegisterRequest request)
     {
         var authResult = _authenticationService.Register(
-            first_name: request.first_name,
-            last_name: request.last_name,
+            firstName: request.first_name,
+            lastName: request.last_name,
             email: request.email,
             password: request.password
         );
 
         return Ok(new AuthenticationResponse(
-            id: authResult.id,
-            first_name: authResult.first_name,
-            last_name: authResult.last_name,
-            email: authResult.email,
-            token: authResult.token
+            id: authResult.User.Id,
+            first_name: authResult.User.FirstName,
+            last_name: authResult.User.LastName,
+            email: authResult.User.Email,
+            token: authResult.Token
         ));
     }
     
@@ -44,11 +44,11 @@ public class AuthenticationController: ControllerBase
         );
         
         return Ok(new AuthenticationResponse(
-            id: authResult.id,
-            first_name: authResult.first_name,
-            last_name: authResult.last_name,
-            email: authResult.email,
-            token: authResult.token
+            id: authResult.User.Id,
+            first_name: authResult.User.FirstName,
+            last_name: authResult.User.LastName,
+            email: authResult.User.Email,
+            token: authResult.Token
         ));
     }
 }

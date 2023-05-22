@@ -3,8 +3,8 @@ namespace BuberDinner.Application.Services.Authentication;
 public interface IAuthenticationService
 {
     AuthenticationResult Register(
-        string first_name,
-        string last_name,
+        string firstName,
+        string lastName,
         string email,
         string password
     );
