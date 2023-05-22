@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Api", "BuberDinner.Api\BuberDinner.Api.csproj", "{8A3E7DB5-11CB-4E2A-BE4D-A048B3C24ADD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A3E7DB5-11CB-4E2A-BE4D-A048B3C24ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3E7DB5-11CB-4E2A-BE4D-A048B3C24ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3E7DB5-11CB-4E2A-BE4D-A048B3C24ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3E7DB5-11CB-4E2A-BE4D-A048B3C24ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
