@@ -2,6 +2,23 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "BuberDinner.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "BuberDinner.Application": "1.0.0",
+          "BuberDinner.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuberDinner.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDinner.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "BuberDinner.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -13,6 +30,16 @@
         },
         "runtime": {
           "bin/placeholder/BuberDinner.Application.dll": {}
+        }
+      },
+      "BuberDinner.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/BuberDinner.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDinner.Contracts.dll": {}
         }
       },
       "BuberDinner.Domain/1.0.0": {
@@ -28,10 +55,20 @@
     }
   },
   "libraries": {
+    "BuberDinner.Api/1.0.0": {
+      "type": "project",
+      "path": "../BuberDinner.Api/BuberDinner.Api.csproj",
+      "msbuildProject": "../BuberDinner.Api/BuberDinner.Api.csproj"
+    },
     "BuberDinner.Application/1.0.0": {
       "type": "project",
       "path": "../BuberDinner.Application/BuberDinner.Application.csproj",
       "msbuildProject": "../BuberDinner.Application/BuberDinner.Application.csproj"
+    },
+    "BuberDinner.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BuberDinner.Contracts/BuberDinner.Contracts.csproj",
+      "msbuildProject": "../BuberDinner.Contracts/BuberDinner.Contracts.csproj"
     },
     "BuberDinner.Domain/1.0.0": {
       "type": "project",
@@ -41,6 +78,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "BuberDinner.Api >= 1.0.0",
       "BuberDinner.Application >= 1.0.0"
     ]
   },
@@ -69,6 +107,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Api/BuberDinner.Api.csproj": {
+              "projectPath": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Api/BuberDinner.Api.csproj"
+            },
             "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Application/BuberDinner.Application.csproj": {
               "projectPath": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Application/BuberDinner.Application.csproj"
             }
