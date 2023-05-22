@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "BuberDinner.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "BuberDinner.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuberDinner.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDinner.Application.dll": {}
+        }
+      },
+      "BuberDinner.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/BuberDinner.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDinner.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BuberDinner.Application/1.0.0": {
+      "type": "project",
+      "path": "../BuberDinner.Application/BuberDinner.Application.csproj",
+      "msbuildProject": "../BuberDinner.Application/BuberDinner.Application.csproj"
+    },
+    "BuberDinner.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BuberDinner.Domain/BuberDinner.Domain.csproj",
+      "msbuildProject": "../BuberDinner.Domain/BuberDinner.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "BuberDinner.Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/qreidt/.nuget/packages/": {}
@@ -31,7 +68,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Application/BuberDinner.Application.csproj": {
+              "projectPath": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Application/BuberDinner.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
