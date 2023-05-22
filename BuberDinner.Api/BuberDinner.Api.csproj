@@ -9,6 +9,7 @@
     <ItemGroup>
       <ProjectReference Include="..\BuberDinner.Application\BuberDinner.Application.csproj" />
       <ProjectReference Include="..\BuberDinner.Contracts\BuberDinner.Contracts.csproj" />
+      <ProjectReference Include="..\BuberDinner.Contracts\BuberDinner.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

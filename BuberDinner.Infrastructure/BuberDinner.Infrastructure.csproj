@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BuberDinner.Api\BuberDinner.Api.csproj" />
       <ProjectReference Include="..\BuberDinner.Application\BuberDinner.Application.csproj" />
     </ItemGroup>
 

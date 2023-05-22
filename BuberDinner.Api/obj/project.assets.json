@@ -56,6 +56,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Contracts/BuberDinner.Infrastructure.csproj",
       "BuberDinner.Application >= 1.0.0",
       "BuberDinner.Contracts >= 1.0.0"
     ]
@@ -91,6 +92,9 @@
             },
             "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Contracts/BuberDinner.Contracts.csproj": {
               "projectPath": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Contracts/BuberDinner.Contracts.csproj"
+            },
+            "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Contracts/BuberDinner.Infrastructure.csproj": {
+              "projectPath": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Contracts/BuberDinner.Infrastructure.csproj"
             }
           }
         }
@@ -126,5 +130,16 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project '/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Contracts/BuberDinner.Infrastructure.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Contracts/BuberDinner.Infrastructure.csproj",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
