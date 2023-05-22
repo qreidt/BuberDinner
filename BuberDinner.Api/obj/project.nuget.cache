@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YQoj8n5F8cIHrJaA8qKKqW2FjXGCmP0FCrwVGWUCrsQ59LsMZ0a7jpOoPB/4CNBHCmm94Ln0XJGCP54OgEKTUQ==",
-  "success": false,
+  "dgSpecHash": "zsHr4ZlNo1jc0seovMVgYcm2wiFDt0i41syUjKEsmV1d9GXioAV6hi0R8Ep6Oe1CXMOPqYixYH91Hv15gKzgvA==",
+  "success": true,
   "projectFilePath": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Api/BuberDinner.Api.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project '/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Contracts/BuberDinner.Infrastructure.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Contracts/BuberDinner.Infrastructure.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
