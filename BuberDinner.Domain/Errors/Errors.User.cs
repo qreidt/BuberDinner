@@ -1,0 +1,14 @@
+using ErrorOr;
+
+namespace BuberDinner.Domain.Errors;
+
+public static partial class Errors
+{
+    public static class User
+    {
+        public static Error DuplicateEmail => Error.Conflict(
+            code: "User.DuplicateEmail",
+            description: "E-mail is already taken"
+        );
+    }
+}

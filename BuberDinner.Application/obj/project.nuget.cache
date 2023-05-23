@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "22Ps1z4sd66ghowwPWTQzPp2e57tSq/NOAuGr3OCV1iOUBlFRCAaYWf3G/jydVhR/NRxN/9HaCG6xryvWjhkNA==",
+  "dgSpecHash": "Fpq7xv0FDXKoH0Pm6/mZw54OPMz2T5NHNCEtsQ+R9wV7qpN4MCLkaCr7wgA8G3zVFdg0A9NuOL2vDaKY93I+7A==",
   "success": true,
   "projectFilePath": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Application/BuberDinner.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/qreidt/.nuget/packages/erroror/1.2.1/erroror.1.2.1.nupkg.sha512",
     "/Users/qreidt/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []

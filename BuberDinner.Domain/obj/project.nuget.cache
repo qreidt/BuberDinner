@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/ZsY3c635UYsuxHoaKYmAS6RLeUWKit3nQrwDs6eqejKjluerTZwyoKvPuxVD8icPADO9B/GoJV4kJJW5JNyjg==",
+  "dgSpecHash": "sYrZW5iUSTWweVMk8/WfxNvfVcd0+jSrPTrhAX058kh/iSgxwa0wYyzk5hj/DeosOfm/45bDJjpdqUKdQlGWLg==",
   "success": true,
   "projectFilePath": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Domain/BuberDinner.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/qreidt/.nuget/packages/erroror/1.2.1/erroror.1.2.1.nupkg.sha512"
+  ],
   "logs": []
 }
