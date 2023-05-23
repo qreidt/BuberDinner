@@ -1,7 +1,8 @@
-using BuberDinner.Application.Services.Authentication;
+using BuberDinner.Application.Authentication.Commands.Register;
+using BuberDinner.Application.Authentication.Queries.Login;
 using BuberDinner.Contracts.Authentication;
 using BuberDinner.Domain.Errors;
-using ErrorOr;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BuberDinner.Api.Controllers;
@@ -10,22 +11,24 @@ namespace BuberDinner.Api.Controllers;
 [Route("auth")]
 public class AuthenticationController: ApiController
 {
-    private readonly IAuthenticationService _authenticationService;
+    private readonly ISender _mediator;
 
-    public AuthenticationController(IAuthenticationService authenticationService)
+    public AuthenticationController(ISender mediator)
     {
-        _authenticationService = authenticationService;
+        _mediator = mediator;
     }
 
 
     [Route("register")]
-    public IActionResult Register(RegisterRequest request)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        ErrorOr<AuthenticationResult> authResult = _authenticationService.Register(
-            firstName: request.first_name,
-            lastName: request.last_name,
-            email: request.email,
-            password: request.password
+        var authResult = await _mediator.Send(
+            new RegisterCommand(
+                FirstName: request.first_name,
+                LastName: request.last_name,
+                Email: request.email,
+                Password: request.password
+            )
         );
 
         return authResult.Match(
@@ -41,11 +44,13 @@ public class AuthenticationController: ApiController
     }
     
     [Route("login")]
-    public IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-        var authResult = _authenticationService.Login(
-            email: request.email,
-            password: request.password
+        var authResult = await _mediator.Send(
+            new LoginQuery(
+                Email: request.email,
+                Password: request.password
+            )
         );
 
         if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)

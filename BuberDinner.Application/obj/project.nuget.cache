@@ -1,11 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "Fpq7xv0FDXKoH0Pm6/mZw54OPMz2T5NHNCEtsQ+R9wV7qpN4MCLkaCr7wgA8G3zVFdg0A9NuOL2vDaKY93I+7A==",
+  "dgSpecHash": "J8zp4hflKsz+dPsYBfWh9Xg/gtd9qIeP5OTGZbbH+rlns+V6D0oizDR4Y//x2ELbLeOBrGjPhgzDtAOTJw/T3w==",
   "success": true,
   "projectFilePath": "/Users/qreidt/langs/c#/BuberDinner/BuberDinner.Application/BuberDinner.Application.csproj",
   "expectedPackageFiles": [
     "/Users/qreidt/.nuget/packages/erroror/1.2.1/erroror.1.2.1.nupkg.sha512",
+    "/Users/qreidt/.nuget/packages/mediatr/12.0.1/mediatr.12.0.1.nupkg.sha512",
+    "/Users/qreidt/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/qreidt/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "/Users/qreidt/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Versão detectada do pacote fora da restrição de dependência: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requer MediatR (>= 11.0.0 && < 12.0.0), mas a versão MediatR 12.0.1 foi resolvida.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
