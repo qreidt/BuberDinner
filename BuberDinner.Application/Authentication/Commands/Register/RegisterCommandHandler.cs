@@ -38,7 +38,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, ErrorOr<A
             Password = command.Password
         });
         
-        // Generate Token
+        // Generate AccessToken
         var token = _tokenGenerator.GenerateToken(user.Id);
         
         return new AuthenticationResult(

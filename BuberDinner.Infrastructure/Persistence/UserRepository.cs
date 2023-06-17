@@ -7,7 +7,12 @@ public class UserRepository: IUserRepository
 {
     private static ulong _sequence;
     private static readonly List<User> Users = new();
-    
+
+    public User? GetById(ulong id)
+    {
+        return Users.FirstOrDefault(user => user.Id == id);
+    }
+
     public User? GetByEmail(string email)
     {
         return Users.FirstOrDefault(user => user.Email == email);

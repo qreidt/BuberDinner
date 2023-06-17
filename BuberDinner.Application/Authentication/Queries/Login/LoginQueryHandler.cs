@@ -36,7 +36,7 @@ public class LoginQueryHandler : IRequestHandler<LoginQuery, ErrorOr<Authenticat
             return Errors.Authentication.InvalidCredentials;
         }
         
-        // Create Token
+        // Create AccessToken
         var token = _tokenGenerator.GenerateToken(user.Id);
         
         return new AuthenticationResult(
